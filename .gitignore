@@ -1,0 +1,8 @@
+/node_modules
+
+# binaries
+/axolotlsay-js*
+/index*
+
+# cargo-dist
+/target
