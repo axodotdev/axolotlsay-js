@@ -1,0 +1,25 @@
+[package]
+name = "axolotlsay-js"
+description = "JavaScript port of axolotlsay"
+version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/axodotdev/axolotlsay-js"
+binaries = ["index"]
+build-command = ["build.sh"]
+
+# Config for 'cargo dist'
+[dist]
+# The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
+cargo-dist-version = "0.4.2"
+# CI backends to support
+ci = ["github"]
+# The installers to generate for each app
+installers = ["shell", "powershell", "homebrew"]
+# A GitHub repo to push Homebrew formulas to
+tap = "axodotdev/homebrew-tap"
+# Target platforms to build apps for (Rust target-triple syntax)
+targets = ["x86_64-unknown-linux-gnu", "aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-pc-windows-msvc"]
+# Publish jobs to run in CI
+publish-jobs = ["homebrew"]
+# Publish jobs to run in CI
+pr-run-mode = "plan"
