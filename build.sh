@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -euo pipefail
+set -eu
 
 EXE_BASENAME=axolotlsay-js
 NODE_VERSION=node18
