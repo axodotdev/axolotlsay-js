@@ -9,6 +9,8 @@ npm install
 
 args=
 
+# If we're building for cargo-dist, specify which target to build and what the
+# filename should be. cargo-dist will expect one output with a known filename.
 if [ -n "${CARGO_DIST_TARGET:-}" ]; then
     case "${CARGO_DIST_TARGET}" in
         x86_64-pc-windows-msvc)
