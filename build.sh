@@ -22,10 +22,10 @@ if [ -n "${CARGO_DIST_TARGET:-}" ]; then
         x86_64-apple-darwin)
             args="--targets ${NODE_VERSION}-darwin-x86_64 --output ${EXE_BASENAME}"
             ;;
-        aarch64-linux-gnu)
+        aarch64-unknown-linux-gnu)
             args="--targets ${NODE_VERSION}-linux-arm64 --output ${EXE_BASENAME}"
             ;;
-        x86_64-linux-gnu)
+        x86_64-unknown-linux-gnu)
             args="--targets ${NODE_VERSION}-linux-x86_64 --output ${EXE_BASENAME}"
             ;;
         *)
