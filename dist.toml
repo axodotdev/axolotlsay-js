@@ -5,7 +5,7 @@ version = "0.1.0"
 license = "MIT"
 repository = "https://github.com/axodotdev/axolotlsay-js"
 binaries = ["axolotlsay-js"]
-build-command = ["./build.sh"]
+build-command = ["bash", "build.sh"]
 
 # Config for 'cargo dist'
 [dist]
