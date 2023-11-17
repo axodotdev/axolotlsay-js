@@ -10,7 +10,7 @@ build-command = ["./build.sh"]
 # Config for 'cargo dist'
 [dist]
 # The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
-cargo-dist-version = "0.5.0-prerelease.1"
+cargo-dist-version = "0.5.0-prerelease.2"
 # CI backends to support
 ci = ["github"]
 # The installers to generate for each app
