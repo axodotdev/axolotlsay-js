@@ -1,7 +1,7 @@
 [package]
 name = "axolotlsay-js"
 description = "JavaScript port of axolotlsay"
-version = "0.1.0"
+version = "0.2.0"
 license = "MIT"
 repository = "https://github.com/axodotdev/axolotlsay-js"
 binaries = ["axolotlsay-js"]
@@ -14,7 +14,7 @@ cargo-dist-version = "0.5.0"
 # CI backends to support
 ci = ["github"]
 # The installers to generate for each app
-installers = ["shell", "powershell", "homebrew"]
+installers = ["shell", "powershell"]
 # A GitHub repo to push Homebrew formulas to
 tap = "axodotdev/homebrew-tap"
 # Target platforms to build apps for (Rust target-triple syntax)
